@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.left {
+  width: 65%;
+  height: 100%;
+  padding: 25px;
+
+  .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .custom-button {
+      background-color: grey; /* Button background color */
+      color: rgb(17, 11, 11); /* Text color */
+      padding: 12px 22px; /* Padding for the button */
+      font-size: 18px; /* Font size */
+      border: none; /* Remove default border */
+      border-radius: 5px; /* Rounded corners */
+      cursor: pointer; /* Mouse pointer when hovering */
+      transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    .custom-button:hover {
+      background-color: #0056b3; /* Darker background on hover */
+    }
+
+    .custom-button:active {
+      background-color: #003d80; /* Even darker background when clicked */
+    }
+
+    .custom-button:focus {
+      outline: none; /* Remove the default focus outline */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add focus effect with shadow */
+    }
+  }
+
+  .top img {
+    width: 30px;
+  }
+
+  /* .middle h2 {
+    
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .middle p {
+  
+    text-align: center;
+    justify-content: center;
+    /* align-items: center;
+    flex-direction: column;
+    background-position: center;
+    display: flex; 
+  }
+
+  .middle form {
+    height: 50%;
+    border-radius: 60px bold;
+    text-align: center;
+    justify-content: center;
+
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  } */
+
+  .middle {
+    width: 60%;
+    margin: 0 auto;
+    /* margin-top: 250px; */
+    margin-top: calc((100vh - 50px - 45px - 235px)/2);
+    text-align: center;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4722ee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #4330ec;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 10px; /* Adjust this value for spacing from the bottom */
+    left: 10px; /* Adjust for left positioning, or set to 'center' if needed */
+    font-size: 14px;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.right {
+  width: 35%;
+  height: 100%;
+  background-image: url(https://images.pexels.com/photos/8462116/pexels-photo-8462116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+  }
+
+  .content {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+  }
+}
